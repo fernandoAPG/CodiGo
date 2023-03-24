@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <form action="" class="formulario" method="post">
+       <h1>Calculadora de IMC</h1>
+        <label for="masa">Masa (KG)</label><br>
+        <input type="number" id="masa" name="masa" placeholder="Ingrese masa en KG" min="0" max="200" required ><br>
+        <label for="altura">Altura (M)</label><br>
+        <input type="number" id="altura" name="altura" placeholder="Ingrese altura en Metros" required min="0" max="3"><br>
+        <button type='button' value="calcular" onclick="imc()">Calcular</button>
+        <button type="reset" value="reset">Resetear</button>
+        <p id="resultado">Resultado</p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
