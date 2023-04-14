@@ -73,7 +73,7 @@ githubInputSearch.addEventListener("keyup",function(event){
 //es la funcion fecth que consume el Api
 
 
-const obtenerDatosGithub = async (username="guillermosifu") => {
+const obtenerDatosGithub = async (username="fernandoAPG") => {
   // ene ste ejemplio await esta haciendo lo sgte
   const response = await fetch(`https://api.github.com/users/${username}`);
   const data = await response.json();
@@ -104,7 +104,8 @@ const setDataUser =(data)=>{
     githubName.innerHTML =data.name;
     githubUsername.innerHTML=`@${data.login}`;
     githubEmail.innerHTML = data.email;
-    githubJoined.innerHTML = "Joined "+data.created_at;
+    const date =  new Date(data.created_at);
+    githubJoined.innerHTML = `Joined ${date.toDateString()}`;
     githubRepos.innerHTML = data.public_repos;
     githubFollowers.innerHTML = data.followers;
     githubFollowing.innerHTML = data.following;
