@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+body {
+    background-color: #adb5bd;
+    display: flex;
+    color: white;
+}
+section {
+    background-color: #868e96;
+    color: white;
+    border-radius: 1rem;
+}
+div {
+    background-color: #868e96;
+    color: white;
+    border-color: #343a40;
+}
+#github-action-search {
+    background-color: #343a40;
+    border: none;
+}
