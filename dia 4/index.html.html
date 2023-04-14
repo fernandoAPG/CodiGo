@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Apis</title>
+  </head>
+  <body>
+    <h1>Github Finder</h1>
+    <section
+      class="container vh-100 d-flex align-items-center justify-content-center"
+    >
+      <div class="text-start w-75">
+        <h1>Github finder</h1>
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo" width="100" height="100" class="rounded-circle img-fluid">
+        <div class="row">
+          <div class="col-md-10">
+            <input
+              id="github-search"
+              type="text"
+              class="form-control"
+              placeholder="Busca tu usuario"
+            />
+          </div>
+          <div class="col-md-2">
+            <div class="d-grid gap-2">
+              <button id="github-action-search" class="btn btn-danger">
+                Buscar
+              </button>
+            </div>
+          </div>
+          <div class="col-md-12 mt-4">
+            <div class="card bg-blue-dark"></div>
+            <div class="card-body p-5">
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    id="img-profile"
+                    src="https://pbs.twimg.com/media/EmUM83TXIAAss5k.png"
+                    alt=""
+                    width="100"
+                    height="100"
+                    class="rounded-circle img-fluid"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h4 id="github-name">The OctoCad</h4>
+                      <p id="github-username">@OctoCat</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p id="github-joined">Joined 20 junio 2011</p>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="card bg-blue-dark">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <p>Repos</p>
+                              <h4 id="github-repos">9</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Followers</p>
+                              <h4 id="github-followers">309</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Following</p>
+                              <h4 id="github-following">120</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Email</p>
+                              <h4 id="github-email">user@gmail.com</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Bio</p>
+                              <h4 id="github-bio">My bio</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Blog</p>
+                              <h4 id="github-blog">My Blog</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>Company</p>
+                              <h4 id="github-company">My company</h4>
+                            </div>
+                            <div class="col-md-4">
+                              <p>URL</p>
+                              <h4 id="github-url">My Url</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
