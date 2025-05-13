@@ -25,6 +25,7 @@ body {
 }
 .container{
   width: 375px;
+  line-height: 2;
 }
 .container-2{
   padding: 0 2rem;
@@ -37,11 +38,16 @@ section{
 }
 h1{
   font-size: 2rem;
-  margin-bottom: 0.5rem;
 }
 h3{
   color: var(--Rose-800);
-  margin-bottom: 0.5rem;
+}
+.preparation{
+  background-color: var(--Rose-50);
+  padding: 1rem;
+}
+.time li{
+  margin-left: 1rem;
 }
 .time li::marker{
   color: var(--Rose-800);
@@ -50,12 +56,35 @@ h3{
 h2{
   font-family: "Young-serif";
   color: var(--Brown-800);
-  margin-bottom: 0.5rem;
 }
 ul li::marker{
   color: var(--Brown-800);
 }
+ul li{
+  margin-left: 1rem; 
+}
+section:nth-of-type(4){
+  border-top: 1px solid var(--Stone-100);
+}
+section:nth-of-type(5){
+  border-top: 1px solid var(--Stone-100);
+}
+span{
+  font-weight: bold;
+}
 ol li::marker{
   color: var(--Brown-800);
+}
+ol li{
+  margin-left: 1rem;
+}
+table tr td {
+  border-bottom: 1px solid var(--Stone-150);
+  padding: 0 2rem;
+  width: 100%;
+}
+table tr .data{
+  color: var(--Brown-800);
+  padding-right: 6rem;
 }
 
