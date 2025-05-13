@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Colors*/
+:root {
+  --White: hsl(0, 0%, 100%);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+body {
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+.container{
+  width: 375px;
+}
+.container-2{
+  padding: 0 2rem;
+}
+img{
+  width: 375px;
+}
+section{
+  margin: 2rem 0;
+}
+h1{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+h3{
+  color: var(--Rose-800);
+  margin-bottom: 0.5rem;
+}
+.time li::marker{
+  color: var(--Rose-800);
+}
+
+h2{
+  font-family: "Young-serif";
+  color: var(--Brown-800);
+  margin-bottom: 0.5rem;
+}
+ul li::marker{
+  color: var(--Brown-800);
+}
+ol li::marker{
+  color: var(--Brown-800);
+}
+
