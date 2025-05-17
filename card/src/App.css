@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size:16px;
+}
+:root {
+  /*Colors*/
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.banner{
+    border-radius: 1rem;
+}
+.container{
+    background-color: var(--White);
+    width: 24rem;
+    padding: 1.5rem;
+    border:1px solid var(--Gray-950);
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+}
+.mini-title{
+    background-color: var(--Yellow);
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--Gray-950);
+}
+.date{
+    font-weight: 500;
+    color: var(--Gray-950);
+}
+.date ,.main-title, p{
+    margin: 1rem 0;
+}
+.main-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--Gray-950);
+}
+.main-title:hover{
+    cursor: pointer;
+    color: var(--Yellow);
+}
+.container > p {
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--Gray-500);
+}
+.autor-info{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    color: var(--Gray-950);
+}
+.avatar-img{
+    width: 2.5rem;
+    margin-right: 0.5rem;
+}
+
