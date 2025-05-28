@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /*Colors*/
+  --White: hsl(0, 100%, 100%);
+  --Purple-100: hsl(275, 100%, 97%);
+  --Purple-600: hsl(292, 16%, 49%);
+  --Purple-950: hsl(292, 42%, 14%);
+  /*Weights: 400, 600, 700*/
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  font-size: 16px;
+}
+body {
+  background: url(../public/images/background-pattern-mobile.svg) no-repeat,
+    linear-gradient(to bottom, var(--Purple-100));
+}
+.container {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+}
+.sub-container {
+  background-color: var(--White);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.header {
+  display: flex;
+}
+.star {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+.title {
+  font-size: 2rem;
+  color: var(--Purple-950);
+  font-weight: 700;
+}
+
+.questions-box {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--Purple-100);
+  align-items: center;
+}
+.sub-container > .questions-box:nth-of-type(2){
+  border-top: none;
+} 
+.questions {
+  margin: 1rem 0;
+  color: var(--Purple-950);
+  width: 14rem;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.questions:hover {
+  color: violet;
+  cursor: pointer;
+}
+.answers {
+  color: var(--Purple-600);
+  font-weight: 400;
+  line-height: 1.5;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  /*text-align: center;*/
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: all 300ms ease-out;
+}
+@media screen and (min-width: 400px) {
+  body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: url(../public/images/background-pattern-desktop.svg) no-repeat,
+      linear-gradient(to bottom, var(--Purple-100));
+  }
+  .container {
+    margin-top: 0;
+  }
+  .sub-container {
+    padding: 2rem;
+  }
+  .sub-container,
+  .container {
+    width: 37rem;
+  }
+  .questions {
+    display: inline-flex;
+    width: auto;
+    margin: 1.5rem 0;
+  }
+  .answers {
+    width: 100%;
+  }
+  .attribution {
+    text-align: center;
+  }
+}

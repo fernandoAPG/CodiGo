@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /*Primary*/
+  --Orange-500: hsl(25, 97%, 53%);
+
+  /*Neutral*/
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+
+  /*Weights: 400, 700*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+body {
+  background-color: var(--Grey-950);
+  padding: 8rem 2rem;
+}
+.container {
+  width: 375px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Grey-900),
+    hsl(213, 19%, 18%, 0.4)
+  );
+  margin-bottom: 1rem;
+}
+.star {
+  border-radius: 50%;
+  background-color: hsla(217, 12%, 63%, 0.1);
+  padding: 1rem;
+}
+.title {
+  color: var(--White);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.title,
+.main-text {
+  margin: 1rem 0;
+}
+.main-text {
+  color: var(--Grey-500);
+  font-weight: 400;
+  font-family: "Overpass";
+  line-height: 1.5;
+}
+.rating-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: var(--Grey-500);
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+.rating-list > li {
+  border-radius: 50%;
+}
+.rating-list > li > button {
+  background-color: hsla(217, 12%, 63%, 0.1);
+  padding: 1rem 1.25rem;
+  border-radius: 50%;
+  border: none;
+  color: var(--Grey-500);
+  font-family: "Overpass";
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.rating-list > li > button:hover {
+  background-color: var(--White);
+  cursor: pointer;
+  color: var(--Grey-900);
+}
+.submit-btn {
+  width: 100%;
+  background-color: var(--Orange-500);
+  border-radius: 2rem;
+  border: none;
+  color: var(--Grey-950);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  font-family: "Overpass";
+  letter-spacing: 0.1rem;
+  transition: 0.5s ease;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: var(--White);
+}
+.attribution {
+  color: var(--White);
+}
+.rating-value {
+  color: var(--Orange-500);
+  font-weight: 400;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: hsla(217, 12%, 63%, 0.1);
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.rating-clicked {
+  background-color: var(--Orange-500);
+}
+@media screen and (min-width: 400px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+  }
+}
